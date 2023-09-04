@@ -12,7 +12,7 @@ public class LoginPage {
     public static final SelenideElement USERNAME = $x("//input[@formcontrolname='username']");
     public static final SelenideElement PASSWORD = $x("//input[@formcontrolname='password']");
     public static final SelenideElement SIGN_IN = $x("//button[@type='submit']");
-    public static final SelenideElement MAIN_PAGE = $x("//div[contains(@title, 'Benchmark')]/../../../../../../../..");
+    public static final SelenideElement MAIN_PAGE = $x("//div[@class='d-flex h-100 flex-column p-2']");
     public static final SelenideElement FAILED_MESSAGE = $x("//div[@role='alert']/..");
 
     public static void openAuthorizationPage() {
