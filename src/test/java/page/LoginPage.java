@@ -9,11 +9,11 @@ public class LoginPage {
     private static final String LOGIN_PAGE_URL = "http://app.tca.deltixuat.com";
     private static final String LOGIN = "selenium_chrome";
     private static final String PASSWORD_USER = "Axa@Demo";
-    public static final SelenideElement USERNAME = $x("//input[@formcontrolname='username']");
-    public static final SelenideElement PASSWORD = $x("//input[@formcontrolname='password']");
-    public static final SelenideElement SIGN_IN = $x("//button[@type='submit']");
-    public static final SelenideElement MAIN_PAGE = $x("//div[@class='d-flex h-100 flex-column p-2']");
-    public static final SelenideElement FAILED_MESSAGE = $x("//div[@role='alert' and @class='alert alert-danger alert-dismissible']");
+    private static final SelenideElement USERNAME = $x("//input[@formcontrolname='username']");
+    private static final SelenideElement PASSWORD = $x("//input[@formcontrolname='password']");
+    private static final SelenideElement SIGN_IN = $x("//button[@type='submit']");
+    private static final SelenideElement MAIN_PAGE = $x("//div[@class='d-flex h-100 flex-column p-2']");
+    private static final SelenideElement FAILED_MESSAGE = $x("//div[@role='alert' and @class='alert alert-danger alert-dismissible']");
 
     public static void openAuthorizationPage() {
         open(LOGIN_PAGE_URL);
