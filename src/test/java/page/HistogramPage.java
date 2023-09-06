@@ -14,7 +14,6 @@ public class HistogramPage extends BaseTest {
     private static final SelenideElement HISTOGRAM_BUTTON = $x("(//div[@class='align-items-center d-flex modes__item-link' and @title='Histogram'])");
     private static final SelenideElement HISTOGRAM = $x("//div[@class='histogram-container']");
     private static final SelenideElement ATTRIBUTE_FIELD = $x("//input[contains(@class, 'autocomplete-input') and @readonly and @title='Price imp. (amount)']");
-
     private static final List<SelenideElement> ATTRIBUTE_MENU = $$(By.xpath("//ul[@class='autocomplete-dropdown-item']")).filterBy(Condition.visible);
     private static final SelenideElement INTERVAL_FIELD = $x("//input[contains(@class, 'autocomplete-input') and @title='10']");
     private static final List<SelenideElement> INTERVAL_MENU = $$(By.xpath("//ul[@class='autocomplete-dropdown-item']"));
