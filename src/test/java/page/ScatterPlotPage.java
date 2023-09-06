@@ -12,14 +12,14 @@ import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.Selenide.$;
 
 public class ScatterPlotPage extends BasePage {
-    public static final SelenideElement SCATTER_BUTTON = $x("(//div[@class='align-items-center d-flex modes__item-link' and @title='Scatter-plot'])");
-    public static final SelenideElement SCATTER_DIAGRAM = $x("//div[@class='scatter-plot-container']");
-    public static final SelenideElement X_ATTRIBUTE_FIELD = $x("//input[contains(@class, 'autocomplete-input') and @readonly and @title='Size']");
-    public static final SelenideElement Y_ATTRIBUTE_FIELD = $x("//input[contains(@class, 'autocomplete-input') and @readonly and @title='Shortfall']");
-    public static final SelenideElement INTERVALS_FIELD = $x("//input[contains(@class, 'autocomplete-input') and @title='2']");
-    public static final List<SelenideElement> X_ATTRIBUTE_MENU = $$(By.xpath("//ul[@class='autocomplete-dropdown-item']")).filterBy(Condition.visible);
-    public static final List<SelenideElement> Y_ATTRIBUTE_MENU = $$(By.xpath("//ul[@class='autocomplete-dropdown-item']")).filterBy(Condition.visible);
-    public static final List<SelenideElement> INTERVALS_MENU = $$(By.xpath("//ul[@class='autocomplete-dropdown-item']"));
+    private static final SelenideElement SCATTER_BUTTON = $x("(//div[@class='align-items-center d-flex modes__item-link' and @title='Scatter-plot'])");
+    private static final SelenideElement SCATTER_DIAGRAM = $x("//div[@class='scatter-plot-container']");
+    private static final SelenideElement X_ATTRIBUTE_FIELD = $x("//input[contains(@class, 'autocomplete-input') and @readonly and @title='Size']");
+    private static final SelenideElement Y_ATTRIBUTE_FIELD = $x("//input[contains(@class, 'autocomplete-input') and @readonly and @title='Shortfall']");
+    private static final SelenideElement INTERVALS_FIELD = $x("//input[contains(@class, 'autocomplete-input') and @title='2']");
+    private static final List<SelenideElement> X_ATTRIBUTE_MENU = $$(By.xpath("//ul[@class='autocomplete-dropdown-item']")).filterBy(Condition.visible);
+    private static final List<SelenideElement> Y_ATTRIBUTE_MENU = $$(By.xpath("//ul[@class='autocomplete-dropdown-item']")).filterBy(Condition.visible);
+    private static final List<SelenideElement> INTERVALS_MENU = $$(By.xpath("//ul[@class='autocomplete-dropdown-item']"));
 
     public static void openScatterPlotPage() {
         SCATTER_BUTTON.shouldBe(visible);
